@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 10px;
+  font-family: Lucida Grande;
+  background-image: url("img/homepagetimer.jpeg");
+  background-size: 100%;
+}
+header {
+  width: 100%;
+  float: left;
+}
+.leftHeader {
+  width: 50%;
+  border: 0px solid black;
+  float: left;
+  background-color: darkgreen;
+  padding-bottom: 0.4%;
+}
+.leftHeader h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2%;
+  margin: 0;
+  color: white;
+}
+.rightHeader {
+  width: 50%;
+  border: 0px solid black;
+  float: left;
+  background-color: darkgreen;
+  padding-bottom: 1.4%;
+}
+.rightHeader form {
+  padding-left: 20%;
+  padding-top: 3%;
+}
+.rightHeader form label {
+  font-size: 0.9rem;
+  color: white;
+}
+.form-group {
+  float: left;
+  padding-left: 2%;
+}
+.click {
+  background-color: darkblue;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.main {
+  width: 100%;
+  border: 0px solid black;
+  background-color: rgb(233, 235, 238);
+}
+.rightSec {
+  width: 50%;
+  float: left;
+  border: 0px solid black;
+}
+.signUp {
+  width: 100%;
+  float: left;
+  border: 0px solid black;
+}
+.signUp h2 {
+  font-size: 3rem;
+  margin-bottom: 0;
+  padding-left: 27%;
+}
+.signUp p {
+  margin-top: 2%;
+  font-size: 1rem;
+  color: white;
+  padding-left: 27%;
+}
+.signUp a {
+  text-decoration: none;
+}

@@ -1,0 +1,53 @@
+body {
+  text-align: center;
+  background-image: url("img/timer.jpeg");
+  background-size: 100%;
+  font-family: sans-serif;
+  font-weight: 100;
+  color: white;
+}
+h1 {
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+.hide {
+  display: none;
+}
+.messages li {
+  list-style: none;
+}
+.col-sm-6 {
+  margin-left: 4%;
+}
+#clockdiv {
+  font-family: sans-serif;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+#clockdiv > div {
+  padding: 10px;
+  border-radius: 3px;
+  background: #00bf96;
+  display: inline-block;
+}
+#clockdiv div > span {
+  padding: 15px;
+  border-radius: 3px;
+  background: #00816a;
+  display: inline-block;
+}
+smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+}
+.logOut a {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 3px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}

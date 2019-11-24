@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 10px;
+  font-family: Lucida Grande;
+  background-color: rgb(233, 235, 238);
+}
+header {
+  width: 100%;
+  float: left;
+}
+.leftHeader {
+  width: 50%;
+  border: 0px solid black;
+  float: left;
+  background-color: darkgreen;
+  padding-bottom: 0.4%;
+}
+.leftHeader h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 2%;
+  margin: 0;
+  color: white;
+}
+.rightHeader {
+  width: 50%;
+  border: 0px solid black;
+  float: left;
+  background-color: darkgreen;
+  padding-bottom: 1.4%;
+}
+.rightHeader form {
+  padding-left: 20%;
+  padding-top: 3%;
+}
+.rightHeader form label {
+  font-size: 0.9rem;
+  color: white;
+}
+.main {
+  width: 100%;
+  border: 0px solid black;
+  background-color: rgb(233, 235, 238);
+}
+.login {
+  float: left;
+  padding-left: 2%;
+}
+.container {
+  float: left;
+  width: 100%;
+}
+.container h1,
+h3 {
+  margin-top: 5%;
+  text-align: center;
+  margin-bottom: 3%;
+}
+.container form {
+  margin-left: 30%;
+}
+.form-group {
+  margin-left: 3%;
+  font-size: 1rem;
+  float: left;
+}

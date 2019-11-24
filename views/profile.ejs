@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Pomodoro Timer!</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="userProfile.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-sm-6">
+        <h3>Timers</h3>
+        <ul class="messages">
+          <% for(var i=0; i<userTime.length; i++) {%>
+          <li class="message">
+            <span contenteditable="true"><%= userTime[i].hour %></span>
+            <span contenteditable="true"><%= userTime[i].minute %></span>
+            <span contenteditable="true"><%= userTime[i].second %></span>
+            <span class="hide"><%= userTime[i]._id %></span>
+            <span><i class="fas fa-play-circle" aria-hidden="true"></i></span>
+            <span><i class="fas fa-edit" aria-hidden="true"></i></span>
+            <span class="delete" aria-hidden="true">Remove</span>
+
+          </li>
+          <% } %>
+        </ul>
+
+        <h2>Add a message</h2>
+        <% if (user.local.email) { %>
+        <form action="/profile" method="POST">
+          <input class="theHour" type="text" name="hour" value="" placeholder="Hours">
+          <input class="theMinute" type="text" name="minute" value="" placeholder="Minutes">
+          <input class="theSecond" type="text" name="second" value="" placeholder="Seconds">
+          <button type="submit" name="button">Set Timer!</button>
+        </form>
+        <h1>Countdown Clock</h1>
+        <div id="clockdiv">
+          <div>
+            <span class="hours" id="hour"></span>
+            <div class="smalltext">Hours</div>
+          </div>
+          <div>
+            <span class="minutes" id="minute"></span>
+            <div class="smalltext">Minutes</div>
+          </div>
+          <div>
+            <span class="seconds" id="second"></span>
+            <div class="smalltext">Seconds</div>
+          </div>
+        </div>
+        <p id="demo"></p>
+      </div>
+      <% } %>
+
+    </div>
+
+
+
+
+    <div class="logOut">
+      <a href="/logout">Log Out</a>
+    </div>
+
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

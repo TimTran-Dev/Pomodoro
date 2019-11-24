@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<header>
+  <section class="leftHeader">
+    <h1>Pomodoro Timer!</h1>
+  </section>
+  <section class="rightHeader">
+    <form action="/login" method="post">
+        <div class="login">
+            <label>Email</label>
+            <input type="text" class="form-control" name="email">
+        </div>
+        <div class="login">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+        <button type="submit" class="btn btn-warning btn-lg">Login</button>
+    </form>
+  </section>
+</header>
+<body>
+<div class="container">
+<div class="col-sm-6 col-sm-offset-3">
+    <h1><span class="fa fa-sign-in"></span> Sign Up</h1>
+    <h3>Time your Studying!</h3>
+      <form action="/signup" method="post">
+          <div class="form-group">
+              <label>E-mail</label>
+              <input type="text" class="form-control" name="email">
+          </div>
+          <div class="form-group">
+              <label>Password</label>
+              <input type="password" class="form-control" name="password">
+          </div>
+          <button type="submit" class="btn btn-warning btn-lg">Sign Up</button>
+      </form>
+    <% if (message.length > 0) { %>
+        <div class="alert alert-danger"><%= message %></div>
+    <% } %>
+</div>
+</div>
+</body>
+</html>
