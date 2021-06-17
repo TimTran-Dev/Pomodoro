@@ -30,7 +30,7 @@ header {
   border: 0px solid black;
   float: left;
   background-color: darkgreen;
-  padding-bottom: 1.4%;
+  padding-bottom: 1%;
 }
 .rightHeader form {
   padding-left: 20%;
@@ -72,9 +72,10 @@ header {
 }
 .signUp p {
   margin-top: 2%;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: white;
   padding-left: 27%;
+  font-weight: bold;
 }
 .signUp a {
   text-decoration: none;
